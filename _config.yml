@@ -1,4 +1,4 @@
-title:            DigitaljamFactory
+title:            DigitalJamFactory
 tagline:          A short tagline
 description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
@@ -6,9 +6,9 @@ url:              http://digitaljamfactory.github.io
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Anthony Murphy
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
+  bio:            "Dad, Agile Development Manager, and Rugby Fan"
   email:          anthony@digitaljamfactory.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
@@ -41,7 +41,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Australia/Sydney
 future:      true
 pygments:    true
 markdown:    kramdown
