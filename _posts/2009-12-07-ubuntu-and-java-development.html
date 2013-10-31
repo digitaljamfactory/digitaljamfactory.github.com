@@ -1,0 +1,34 @@
+---
+layout: post
+title: Ubuntu and Java development
+categories:
+- Development
+- Ubuntu
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  sociableoff: 'false'
+  _edit_lock: '1291981227'
+  _edit_last: '1'
+---
+After three and a half years my work desktop was badly in need of a rebuild. It was slow and unresponsive, probably due to the fact that I had very little hard drive space available . I decided to move from Windows to Linux, specifically the latest Ubuntu 9.10. 
+
+After backing up, the install was pretty straight forward. Apart from problems with dual screens and my old video card which was resolved by a new graphics card. I was up and running including Spotify in about 2 hours. 
+
+The one reservation I had about the switch was with Microsoft Exchange integration but I decided that using Thunderbird 3 with lightning would be enough.
+
+What I hadn't expected were the problems I had setting up my Java development environment. 
+
+First up JDK 5 can not be installed using apt-get out of the box as JDK 5 went end of life on the 30th of October and 9.10 was release on the 29th. I realise that the EOL transition period began on the 8th of April but we have some applications which are in maintenance mode and will probably live in some form until the end of 2010. 
+
+We are developing a new platform using JDK 6 to replace these applications on new hardware but 3 days after the switch I had to do an emergency fix. It's pretty straight forward to solve add the jaunty multiverse sources and apt-get install sun-java5-jdk. Which is easier and quicker than rebuilding the applications with 6 and updating the Java version on each box. 
+
+<a href="http://dambalah.com/2007/09/21/install-java-on-ubuntu/">This</a> is a good post showing how to switch between Java versions .
+
+Next I had problems with empty Swing dialog boxes in Netbeans and Intellij this was down to an issue with Java 6 and compiz windowing.
+
+The last issue I had was a problem with the SVN plugin for Intellij 7 as described in <a href="http://jetbrains.net/jira/browse/IDEA-22477?disableRedirect">this</a> jira ticket. 
+
+Overall I'm very impressed. I now have more responsive development box.

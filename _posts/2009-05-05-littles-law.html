@@ -1,0 +1,23 @@
+---
+layout: post
+title: Little's law
+categories:
+- Development
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_lock: '1241542462'
+  _edit_last: '1'
+---
+I'm currently involved in a large redevelopment project in my day job, a question has come up. How long will a message spend in our messaging layer (but it could be applied to the system as a whole)? This is an excellent question. We can determine this using <a href="http://en.wikipedia.org/wiki/Little's_law#Use_in_performance_testing_of_computer_systems">Little's law</a>, (Thanks Eamonn).
+
+Little’s law states that 
+
+<blockquote>
+The long-term average number of customers in a stable system L (known as the Offered load), is equal to the long-term average arrival rate, λ, multiplied by the long-term average time a customer spends in the system, W, or: L = λW
+</blockquote>
+
+If we know that at our peak we will be recieving 200 messages a second and the backlog in the messaging layer is 20. Then we know that at peak a message will spend 100 milliseconds in the messaging layer. The trick here is to find the correct average figures.
+

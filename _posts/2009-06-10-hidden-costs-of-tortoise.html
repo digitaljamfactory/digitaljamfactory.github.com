@@ -1,0 +1,17 @@
+---
+layout: post
+title: Hidden costs of Tortoise
+categories:
+- Development
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _edit_lock: '1263331765'
+  sociableoff: 'false'
+---
+I've recently noticed a slow down in the performance of my PC. When I looked into it I saw a lot of I/O activity, it turns out that Tortoise cache will scan your entire hard drive for updates so it can add the svn icons to folders and files. If you dont limit the paths it searches for changes it will scan your entire hard disk. For details on how to do this read Paraesthesia's blog <a href="http://www.paraesthesia.com/archive/2007/09/26/optimize-tortoise-svn-cache-tsvncache.exe-disk-io.aspx">post</a>
+
+

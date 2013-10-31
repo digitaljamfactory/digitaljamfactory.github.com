@@ -1,0 +1,19 @@
+---
+layout: post
+title: Flickr and jquery
+categories:
+- Development
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  sociableoff: 'false'
+  _edit_lock: '1262872623'
+  _edit_last: '1'
+---
+We recently got the professional photos of our wedding back and we wanted to post them online. The big issue for us was we wanted to keep to the theme and the colour scheme of the wedding but we also wanted the solution to be easy to use. By this I mean easy to upload photos, easy to organize photos, and it shouldn't take more than an evening to set up. 
+
+For ease of use nothing beats Flickr but it fails because the Flickr brand doesn't fit our theme. We already had a domain used by the rsvp web app we built so I thought about seting up a wordpress blog, which would allow us to style as we liked but this solution fails as I couldn't find a Wordpress plugin that would allow us to upload and organize the photos easily. 
+
+Enter jQuery and the brilliant gallery plugin called <a href="http://WWW.twospy.com/galleriffic/#7">galleriffic</a>, my original plan was to use a json feed of the wedding photoset on Flickr but feeds are limited to 20 entries and we had 300 so back to the drawing board. Flickr's api has a call that returns the image details for a photoset so one new api key later and we were in business with a site that follows the theme, with all the images sorted and uploaded with the work completed on a Sunday evening. You can see the finished work <a href="http://www.anthonyandliza.com">here</a>
