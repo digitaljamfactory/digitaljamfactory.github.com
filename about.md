@@ -5,10 +5,6 @@ title: About Digitaljamfactory
 tagline: 
 tags: [about]
 modified: 30-10-2013
-image:
-  feature: texture-feature-02.jpg
-  credit: Texture Lovers
-  creditlink: http://texturelovers.com
 ---
 
 I’m an experienced Agile Development Manager with strong people management skills built on clear communication and trust. These characteristics help me to achieve the best results for clients and stakeholders, bringing high quality projects to completion on time. I listen carefully then deliver exactly what I promise.
